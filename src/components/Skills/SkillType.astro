@@ -1,0 +1,42 @@
+---
+import SkillCard from "./SkillsCard.astro"
+
+interface Props {
+    label:string,
+    skills:{
+        src: string,
+        alt:string,
+        label:string,
+    }[]
+}
+
+const {
+    label,
+    skills, 
+} = Astro.props
+---
+<link rel="stylesheet" href="styles.css">
+<li>{label}
+    <div class="card__group col-2">
+        {
+            skills.map( s => {
+                return  <SkillCard {...s}/>
+            })
+        }
+    </div>
+</li>
+
+<style>
+    li{
+        list-style-position: inside;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    div{
+        margin-top: 4px;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+</style>

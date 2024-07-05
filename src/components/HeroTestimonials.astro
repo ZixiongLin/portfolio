@@ -1,0 +1,34 @@
+---
+    import HeroHeader from "./Hero/HeroHeader.astro"
+    import Testimonial from "./Testimonial.astro"
+---
+<link rel="stylesheet" href="styles.css">
+
+<section class="hero">
+    <HeroHeader title="Testimonials"/>
+    <div class="card__group">
+        <Testimonial 
+            src="https://media.licdn.com/dms/image/D4D03AQEAm95jc9eXyw/profile-displayphoto-shrink_200_200/0/1674301545057?e=2147483647&v=beta&t=OClZqVfgOehlLfJfQ62BJVmf7wXktsyYRDEW_tnx6Eo"
+            quote="Un profesional modélico que se involucra al 100% en los proyectos"
+        />
+        <Testimonial 
+            src="https://media.licdn.com/dms/image/C4D03AQGRoX0RejIY-w/profile-displayphoto-shrink_200_200/0/1517398308618?e=2147483647&v=beta&t=net_-m_7Mpwhr9tHBYvWJpzs35ehzvgovePa-2rdVhc"
+            quote="Ejemplo de adaptación y resiliencia, trabajador incansable y excelente informático."
+        />
+    </div>
+</section>
+
+<style>
+    .hero{
+        border-radius: 10px;
+        background-color:#4A5E6D; 
+        padding: 12px;
+    }
+    .card__group{
+        margin-top: 4px;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    }
+</style>

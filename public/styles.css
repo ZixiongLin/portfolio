@@ -1,0 +1,103 @@
+:root{
+    --primary__1000:       #00274b;
+    --primary__900:        #00498d;
+    --primary__800:        #005fb6;
+    --primary__700:        #0074df;
+    --primary__600:        #0989ff;
+    --primary__500:        #329dff;
+    --primary__400:        #5bb0ff;
+    --primary__300:        #84c4ff;
+    --primary__200:        #add8ff;
+    --primary__100:        #d6ebff;
+
+    --secondary__1000:     #323F49;
+    --secondary__900:      #4A5E6D;
+    --secondary__800:      #637D92;
+    --secondary__700:      #7991A4;
+    --secondary__600:      #92A5B5;
+    --secondary__500:      #B6C3CD;
+    --secondary__400:      #C2CDD6;
+    --secondary__300:      #CED7DE;
+    --secondary__200:      #DAE1E7;
+    --secondary__100:      #E7EBEF;
+
+    --base__white:          #fafafa;
+    --base__back:           #0a0a0b;
+
+    --neutrals__1000:     #151314;
+    --neutrals__800:      #433e3f;
+    --neutrals__600:      #726c6c;
+    --neutrals__500:      #898384;
+    --neutrals__400:      #9f9c9c;
+    --neutrals__300:      #b5b3b3;
+    --neutrals__200:      #cccbcb;
+    --neutrals__100:      #e3e3e3;
+
+    --rose__900:        #580a72;
+    --rose__800:        #741281;
+    --rose__700:        #831788;
+    --rose__600:        #951d90;
+    --rose__500:        #a12195;
+    --rose__400:        #b043a4;
+    --rose__300:        #bf65b4;
+    --rose__200:        #d290c9;
+    --rose__100:        #e4bcde;
+    --rose__50:         #f4e4f1;
+
+    
+    --magenta__900:     #720a24;
+    --magenta__800:     #921926;
+    --magenta__700:     #a42127;
+    --magenta__600:     #b72927;
+    --magenta__500:     #c43026;
+    --magenta__400:     #d04241;
+    --magenta__300:     #dc5e5f;
+    --magenta__200:     #e9898a;
+    --magenta__100:     #f4b6b8;
+    --magenta__50:      #fbe2e2;
+
+    --text_white:          #ffffff;
+    --text_black:          #000000;
+
+    --font_Inter: "Inter", sans-serif;
+
+    --border-radius-sm: 10px;
+    --border-radius-s: 6px;
+}
+
+
+@view-transition {
+    navigation: auto;
+}
+  
+li>.label{
+    font-weight: bold;
+    color: var(--base__white);
+}
+.email{
+    color: var(--base__white);
+}
+
+section.hero{
+    border-radius: var(--border-radius-sm);
+    background-color: var(--secondary__900);
+    padding: 12px;
+}
+
+h1{
+    color: var(--base__white);
+    padding: 8px;
+    border-bottom: 2px solid var(--warning__200);
+    margin: 8px;
+}
+
+ul{
+    padding-left: 0;
+    margin-left: 8px;
+
+}
+@media (max-width: 720px) {
+    body{
+        grid-template-columns: 1fr;
+    }
+}

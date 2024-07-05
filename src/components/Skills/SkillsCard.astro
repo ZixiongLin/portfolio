@@ -1,0 +1,40 @@
+---
+    interface Props {
+        src: string,
+        alt:string,
+        label:string,
+    }
+    const {
+        src,
+        alt,
+        label
+    } = Astro.props
+---
+<link rel="stylesheet" href="styles.css">
+
+<div class="card">
+    <img src={src} alt={alt} />
+    <p class="label">{label}</p>
+</div>
+
+<style>
+    
+div{
+    padding: 8px;
+    border: 1px solid #DAE1E7;
+    border-radius: 4px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+img {
+    width: 2rem;
+    background-color: #fafafa;
+    padding: 2px;
+    border-radius: 2px;
+}
+p{
+    color: #fafafa;
+}
+
+</style>

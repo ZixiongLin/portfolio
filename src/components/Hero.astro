@@ -1,0 +1,121 @@
+---
+    import HeroHeader from "./HeroHeader.astro"
+    import SkillType from "./Skills/SkillType.astro"
+
+---
+<section class="hero">
+
+    <HeroHeader title="Skills"/>
+    <ul>
+        <SkillType
+            label="Languages"
+            skills={[
+                {
+                    label:"React",
+                    src:"https://www.svgrepo.com/show/452092/react.svg",
+                    alt:"React"
+                },
+                {
+                    label:"Angular",
+                    src:"https://www.svgrepo.com/show/373427/angular.svg",
+                    alt:"Angular"
+                },
+                {
+                    label:"NextJS",
+                    src:"https://www.svgrepo.com/show/354113/nextjs-icon.svg",
+                    alt:"NextJS"
+                },
+                {
+                    label:"Wordpress",
+                    src:"https://www.svgrepo.com/show/513085/wordpress-139.svg",
+                    alt:"Wordpress"
+                }
+            ]}
+        />
+
+        
+        <SkillType
+            label="Backend"
+            skills={[
+                {
+                    label:"NodeJS",
+                    src:"https://www.svgrepo.com/show/439238/nodejs.svg",
+                    alt:"NodeJS"
+                },
+                {
+                    label:"ExpressJS",
+                    src:"https://www.svgrepo.com/show/376367/express.svg",
+                    alt:"ExpressJS"
+                }
+            ]}
+        />
+        <SkillType
+            label="Mobile"
+            skills={[
+                {
+                    label:"React Native",
+                    src:"https://www.svgrepo.com/show/452092/react.svg",
+                    alt:"React Native"
+                },
+                {
+                    label:"Flutter",
+                    src:"https://www.svgrepo.com/show/373604/flutter.svg",
+                    alt:"Flutter"
+                }
+            ]}
+        />
+        <SkillType
+            label="Database"
+            skills={[
+                {
+                    label:"PostgreSQL",
+                    src:"https://www.svgrepo.com/show/439268/postgresql.svg",
+                    alt:"PostgreSQL"
+                },
+                {
+                    label:"MySQL",
+                    src:"https://www.svgrepo.com/show/439233/mysql.svg",
+                    alt:"MySQL"
+                },
+                {
+                    label:"MongoDB",
+                    src:"https://www.svgrepo.com/show/439231/mongodb.svg",
+                    alt:"MongoDB"
+                }
+            ]}
+        />
+        <SkillType
+            label="Another Tools"
+            skills={[
+                {
+                    label:"Figma",
+                    src:"https://www.svgrepo.com/show/448222/figma.svg",
+                    alt:"Figma"
+                },
+                {
+                    label:"Power BI",
+                    src:"https://www.svgrepo.com/show/473761/powerbi.svg",
+                    alt:"Power BI"
+                },
+                {
+                    label:"Notion",
+                    src:"https://www.svgrepo.com/show/521773/notion.svg",
+                    alt:"Notion"
+                },
+            ]}
+        />
+    </ul>
+</section>
+
+<style>
+    .hero{
+        border-radius: 10px;
+        background-color:#4A5E6D; 
+        padding: 12px;
+    }
+
+    ul{
+        text-align: start;
+        color: #fafafa;
+    }
+</style>
