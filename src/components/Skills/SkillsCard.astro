@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+
+
     interface Props {
         src: string,
         alt:string,
@@ -13,7 +16,7 @@
 <link rel="stylesheet" href="styles.css">
 
 <div class="card">
-    <img src={src} alt={alt} />
+    <Image src={src} alt={alt} width={24} height={24}  loading={"eager"}/>
     <p class="label">{label}</p>
 </div>
 
@@ -27,6 +30,7 @@ div{
     gap: 8px;
     align-items: center;
 }
+
 img {
     width: 2rem;
     background-color: #fafafa;

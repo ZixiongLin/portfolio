@@ -1,6 +1,11 @@
+---
+import { Image } from "astro:assets";
+import Me from '../../public/assets/me.jpeg';
+---
+
 <section class="me">
     <div class="photo">
-        <img src="assets/me.jpeg" alt="me">
+        <Image src={Me} alt="me" width={0} height={0} loading={"eager"}>
     </div>
     <div class="about__me">
         <h2>
@@ -45,7 +50,7 @@
         font-weight: bold;
     }
     .chip{
-        background-color: #637D92;
+        background-color: #0d2b47;
         border-radius: 6px;
         padding: 4px;
         color: #fafafa;
