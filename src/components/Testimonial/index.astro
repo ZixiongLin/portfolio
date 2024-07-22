@@ -1,13 +1,10 @@
 ---
-import { Image } from "astro:assets"
-
-
 const {src, quote, name} = Astro.props
 
 ---
 <div>
     <figure>
-        <Image src={src} alt={name} srcset="" width="80" height="80">
+        <img src={src} alt={name} srcset="" width="80px" height="80px">
         <figcaption>{name}</figcaption>
     </figure>
 
@@ -44,6 +41,8 @@ q{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    /* text-shadow: 4px 4px 2px rgba(103,103,103,0.5); */
+
 }
 
 </style>
