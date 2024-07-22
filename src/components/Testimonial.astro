@@ -1,11 +1,13 @@
 ---
+import { Image } from "astro:assets"
+
 
 const {src, quote, name} = Astro.props
 
 ---
 <div>
     <figure>
-        <img src={src} alt="" srcset="">
+        <Image src={src} alt={name} srcset="" width="80" height="80">
         <figcaption>{name}</figcaption>
     </figure>
 
