@@ -1,5 +1,6 @@
 ---
-const {src, quote, name} = Astro.props
+import type { Testimonial } from "../../types/testimonial"
+const {src, quote, name} = Astro.props as Testimonial
 
 ---
 <div>
