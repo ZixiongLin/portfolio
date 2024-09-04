@@ -12,7 +12,7 @@ export const TESTIMONIALS:Testimonial[] =[
         name:"Gustavo Pestana Pérez"
     },
     {
-        src:"https://media.licdn.com/dms/image/D4D03AQFq83_uIje5nQ/profile-displayphoto-shrink_400_400/0/1669030921352?e=1726704000&v=beta&t=ZysfhhcTooXaa39qF_sjb3y9tMcxEE9IP9MfSHb08q0",
+        src:"https://media.licdn.com/dms/image/v2/D4D03AQHXw08sKS7vaA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725033225260?e=1730937600&v=beta&t=Q64CLINDRPv5kFr5oCbCmYCH3X0uBEge0mPspTWdQdc",
         quote:"Trabajador incansable y excelente informático.",
         name:"Guacimara Jiménez García"
     },
